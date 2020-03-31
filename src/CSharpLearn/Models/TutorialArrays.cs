@@ -1,6 +1,6 @@
 using System;
 
-// pag 220 Deittel
+// pag 227 Deittel
 namespace CSharpLearn
 {
     class TutorialArrays
