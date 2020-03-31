@@ -68,5 +68,21 @@ namespace CSharpLearn
                 }
             }
         }
+
+        public static void GradeBookTest()
+        {
+            int[] gradesArray = {87,68,94,100,83,78,85,91,76,87};
+
+            var myGradeBook = new GradeBook(
+                "CS101 Introduction to C# Programming",gradesArray);
+            
+            myGradeBook.displayMessage();
+            myGradeBook.processGrades();
+        }
+
+        public static void InitRectJaggedArrays()
+        {
+            // TODO
+        }
     }
 }

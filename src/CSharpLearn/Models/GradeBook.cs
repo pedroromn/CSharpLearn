@@ -75,12 +75,48 @@ namespace CSharpLearn
 
         public void OutputBarChart()
         {
-            //TODO 
+           Console.WriteLine("Grade distribution");
+
+           var frequency = new int[11];
+
+           // foreach grade, increment the apropiate frequency
+           foreach(var grade in grades)
+           {
+               ++frequency[grade / 10];
+           }
+
+           for(var count = 0; count < frequency.Length; ++count)
+           {
+               if(count == 10)
+               {
+                   Console.Write("  100: ");
+               }
+               else
+               {
+                   Console.Write($"{count * 10:D2}-{count * 10 + 9:D2}: ");
+               }
+
+               // display bar of asterisks
+                for(var stars = 0; stars < frequency[count]; ++stars)
+                {    
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+           }
         }
 
         public void OutputGrades()
         {
-            // TODO
+            Console.WriteLine("The grades are: \n");
+
+            // output each student's grade
+            for(var student = 0; student < grades.Length; ++student)
+            {
+                Console.WriteLine(
+                    $"Student {student +1, 2}: {grades[student],3}");        
+            }
+
         }
 
         

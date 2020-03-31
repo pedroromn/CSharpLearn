@@ -24,7 +24,8 @@ namespace CSharpLearn
             //TutorialDeittel.StudentTest();
             //TutorialArrays.BarChart();
             //TutorialArrays.RollDie();
-            TutorialArrays.CardShufflingDealing();
+            //TutorialArrays.CardShufflingDealing();
+            //TutorialArrays.GradeBookTest();
         }
     }
 }
