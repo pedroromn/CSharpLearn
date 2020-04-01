@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System;
 
+// Deittel: pag 261 
+
 namespace CSharpLearn
 {
     class TutorialLists
