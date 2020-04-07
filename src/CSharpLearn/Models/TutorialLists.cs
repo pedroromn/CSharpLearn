@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System;
 
 // Deittel: pag 261 
@@ -118,6 +119,31 @@ namespace CSharpLearn
             {
                 string value = $">> {item}";
                 Console.WriteLine(value: value);
+            }
+        }
+
+        public static void LinqWithSimpleTypeArray()
+        {
+            // create an integer array
+            var values = new[] {2,9,5,0,3,7,1,4,8,5};
+
+            // display original values
+            Console.Write("Original array: ");
+            foreach(var element in values)
+            {
+                Console.Write($" {element}");
+            }
+
+            var filtered = 
+                from value in values
+                where value > 4
+                //orderby value descending
+                select value;
+
+            Console.Write("\nArray values grather than 4: ");
+            foreach(var value in filtered)
+            {
+                Console.Write($" {value}");
             }
         }
     }

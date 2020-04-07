@@ -26,7 +26,8 @@ namespace CSharpLearn
             //TutorialArrays.RollDie();
             //TutorialArrays.CardShufflingDealing();
             //TutorialArrays.GradeBookTest();
-            TutorialArrays.InitRectJaggedArrays();
+            //TutorialArrays.InitRectJaggedArrays();
+            TutorialLists.LinqWithSimpleTypeArray();
         }
     }
 }
