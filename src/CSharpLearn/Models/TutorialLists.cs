@@ -146,5 +146,41 @@ namespace CSharpLearn
                 Console.Write($" {value}");
             }
         }
+
+        public static void LinqWithArrayOfObjects()
+        {
+            var employees = new [] {
+                new Employee("Jason","Red",5000M),
+                new Employee("Ashley","Green",7600M),
+                new Employee("Matthew","Indigo",3587.5M),
+                new Employee("James","Indigo",4700.77M),
+                new Employee("Luke","Indigo",6200M),
+                new Employee("Jason","Blue",3200M),
+                new Employee("Wendy","Brown",4236.4M)
+            };
+
+            // display all employees
+            Console.WriteLine("Original array: ");
+            foreach(var employee in employees)
+            {
+                Console.WriteLine(employee);
+            }
+
+            // filter a range of salaries using && in a Linq query
+            var between4K6K =
+                from e in employees
+                where (e.MonthlySalary >= 4000M) && (e.MonthlySalary <= 6000M)
+                select e;    
+
+            // display employee making between 4000 and 6000 per month
+            Console.WriteLine("\nEmployees earning in the range " +
+                $"{4000:C}-{6000:C} per month: ");
+
+            foreach(var employee in between4K6K)
+            {
+                Console.WriteLine(employee);
+            }
+
+        }
     }
 }

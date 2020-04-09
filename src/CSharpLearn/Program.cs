@@ -27,7 +27,8 @@ namespace CSharpLearn
             //TutorialArrays.CardShufflingDealing();
             //TutorialArrays.GradeBookTest();
             //TutorialArrays.InitRectJaggedArrays();
-            TutorialLists.LinqWithSimpleTypeArray();
+            //TutorialLists.LinqWithSimpleTypeArray();
+            TutorialLists.LinqWithArrayOfObjects();
         }
     }
 }
