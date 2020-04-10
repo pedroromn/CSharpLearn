@@ -1,7 +1,6 @@
 using System;
 using System.Text.RegularExpressions;
 
-// pag 220
 
 namespace CSharpLearn
 {
@@ -66,7 +65,66 @@ namespace CSharpLearn
 
         public static void Time1Test()
         {
-            var time = new Time1(); // Deittel - pag 269
+            var time = new Time1();
+
+            Console.WriteLine(
+                $"The initial universal time is: {time.ToUniversalString()}");
+            
+            Console.WriteLine(
+                $"The initial standar time is: {time.ToString()}");
+
+            Console.WriteLine();
+
+            time.SetTime(13, 27, 6);
+
+            Console.WriteLine(
+                $"The universal time is: {time.ToUniversalString()}");
+            
+            Console.WriteLine(
+                $"The standar time is: {time.ToString()}");
+
+            Console.WriteLine();
+
+            try
+            {
+                time.SetTime(99, 99, 99);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                
+                Console.WriteLine(ex.Message + "\n");
+            }
+
+            Console.WriteLine("After attempting invalid settings:");
+            Console.WriteLine($"Universal time: {time.ToUniversalString()}");
+            Console.WriteLine($"Standard time: {time.ToString()}");
+        }
+
+        public static void EmployeeDateTest()
+        {
+            var birthday = new Date(7, 24, 1949);
+            var hireDate = new Date(3, 12, 1988);
+            var employee = new EmployeeDate("Bob", "Blue", birthday, hireDate);
+
+            Console.WriteLine(employee);
+        }
+
+        public static void EmployeeCountTest()
+        {
+            Console.WriteLine($"\nEmployees before instantiation: {EmployeeCount.Count}");
+
+            // creato two Employees; Count should become 2
+            var e1 = new EmployeeCount("Susan", "Baker");
+            var e2 = new EmployeeCount("Bob", "Blue");
+
+            Console.WriteLine($"\nEmployees after instantiation: {EmployeeCount.Count}");
+
+            Console.WriteLine($"\nEmployee 1: {e1}");
+            Console.WriteLine($"Employee 2: {e2}");
+
+            // Employee object as being eligible for garbage collection
+            e1 = null;
+            e2 = null;
         } 
     }
 }

@@ -28,7 +28,10 @@ namespace CSharpLearn
             //TutorialArrays.GradeBookTest();
             //TutorialArrays.InitRectJaggedArrays();
             //TutorialLists.LinqWithSimpleTypeArray();
-            TutorialLists.LinqWithArrayOfObjects();
+            //TutorialLists.LinqWithArrayOfObjects();
+            //TutorialDeittel.Time1Test();
+            //TutorialDeittel.EmployeeDateTest();
+            TutorialDeittel.EmployeeCountTest();
         }
     }
 }
