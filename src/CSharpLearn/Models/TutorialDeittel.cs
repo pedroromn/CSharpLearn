@@ -125,6 +125,27 @@ namespace CSharpLearn
             // Employee object as being eligible for garbage collection
             e1 = null;
             e2 = null;
+        }
+
+        public static void ComplexNumberTest()
+        {
+            Console.Write("Enter de real part of complex number x: ");
+            double realPart = double.Parse(Console.ReadLine());
+            Console.Write("Enter de Imaginary part of complex number x: ");
+            double imaginaryPart = double.Parse(Console.ReadLine());
+            var x = new ComplexNumber(realPart, imaginaryPart);
+
+            Console.Write("Enter de real part of complex number y: ");
+            realPart = double.Parse(Console.ReadLine());
+            Console.Write("Enter de Imaginary part of complex number y: ");
+            imaginaryPart = double.Parse(Console.ReadLine());
+            var y = new ComplexNumber(realPart, imaginaryPart);
+
+            Console.WriteLine();
+            Console.WriteLine($"{x} + {y} = {x + y}");
+            Console.WriteLine($"{x} - {y} = {x - y}");
+            Console.WriteLine($"{x} * {y} = {x * y}");
+
         } 
     }
 }
