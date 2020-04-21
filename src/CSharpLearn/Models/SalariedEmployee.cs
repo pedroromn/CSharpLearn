@@ -7,8 +7,8 @@ namespace CSharpLearn
         private decimal weeklySalary;
 
         public SalariedEmployee(string firstName, string lastName, 
-            string socialSecurityNUmber, decimal weeklySalary)
-            :base(firstName, lastName, socialSecurityNUmber)
+            string socialSecurityNumber, decimal weeklySalary)
+            :base(firstName, lastName, socialSecurityNumber)
         {
             WeeklySalary = weeklySalary;
         }
