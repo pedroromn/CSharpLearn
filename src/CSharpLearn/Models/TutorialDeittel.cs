@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 
-// Deitel - page 355 IPayable
-
 namespace CSharpLearn
 {
     class TutorialDeittel
