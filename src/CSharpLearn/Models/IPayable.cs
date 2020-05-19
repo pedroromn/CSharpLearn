@@ -4,6 +4,6 @@ namespace CSharpLearn
 {
     public interface IPayable
     {
-        decimal GetPaymentAmount(); // calculate payment; no implementation
+        decimal GetPaymentAmount(); // calculate payment; no implementation 
     }
 }
