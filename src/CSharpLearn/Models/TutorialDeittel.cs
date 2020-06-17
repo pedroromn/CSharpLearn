@@ -210,6 +210,56 @@ namespace CSharpLearn
         public static void DivideByZeroNoExceptionHandling()
         {
             // Deitel page 364
+            // get numerator
+            Console.Write("Please enter an integer numerator: ");
+            var numerator = int.Parse(Console.ReadLine());
+
+            // get denominator
+            Console.Write("Please enter an integer denominator: ");
+            var denominator = int.Parse(Console.ReadLine());
+
+            // divide the two integers, then display the result
+            var result = numerator / denominator;
+
+            Console.WriteLine($"\nResult: {numerator} / {denominator} = {result}");
+        }
+
+        public static void DivideByZeroExceptionHandling()
+        {
+            var continueLoop = true;
+
+            do
+            {
+
+                try
+                {
+                    // get numerator
+                    Console.Write("Please enter an integer numerator: ");
+                    var numerator = int.Parse(Console.ReadLine());
+
+                    // get denominator
+                    Console.Write("Please enter an integer denominator: ");
+                    var denominator = int.Parse(Console.ReadLine());
+
+                    // divide the two integers, then display the result
+                    var result = numerator / denominator;
+
+                    Console.WriteLine($"\nResult: {numerator} / {denominator} = {result}");
+                    continueLoop = false;
+                }
+                catch (FormatException formatException)
+                {
+                    
+                    Console.WriteLine($"\n{formatException.Message}");
+                    Console.WriteLine("You must enter two integers. Please try again. \n");
+                }
+                catch (DivideByZeroException divideByZeroException)
+                {
+                    Console.WriteLine($"\n{divideByZeroException.Message}");
+                    Console.WriteLine("Zero is an invalid denominator. Please try again. \n");
+                }
+                
+            } while (continueLoop);
         }
     }
 }
