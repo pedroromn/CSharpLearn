@@ -206,5 +206,10 @@ namespace CSharpLearn
             }
 
         }
+
+        public static void DivideByZeroNoExceptionHandling()
+        {
+            // Deitel page 364
+        }
     }
 }
