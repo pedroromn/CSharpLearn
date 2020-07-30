@@ -209,9 +209,6 @@ namespace CSharpLearn
 
         public static void DivideByZeroNoExceptionHandling()
         {
-<<<<<<< HEAD
-            // Deitel page 364 - TODO
-=======
             // Deitel page 364
             // get numerator
             Console.Write("Please enter an integer numerator: ");
@@ -263,7 +260,6 @@ namespace CSharpLearn
                 }
                 
             } while (continueLoop);
->>>>>>> 3dd98512332ce1f5cdffc1d343559328c09abbf7
         }
     }
 }
