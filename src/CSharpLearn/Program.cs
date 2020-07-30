@@ -31,9 +31,9 @@ namespace CSharpLearn
             //TutorialLists.LinqWithArrayOfObjects();
             //TutorialDeittel.Time1Test();
             //TutorialDeittel.EmployeeDateTest();
-            //TutorialDeittel.EmployeeCountTest();
+            TutorialDeittel.EmployeeCountTest();
             //TutorialDeittel.ComplexNumberTest();
-            TutorialDeittel.PayrollSystemTest();
+            //TutorialDeittel.PayrollSystemTest();
         }
     }
 }
