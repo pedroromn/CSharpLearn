@@ -34,6 +34,11 @@ namespace CSharpLearn
             TutorialDeittel.EmployeeCountTest();
             //TutorialDeittel.ComplexNumberTest();
             //TutorialDeittel.PayrollSystemTest();
+<<<<<<< HEAD
+=======
+            //TutorialDeittel.DivideByZeroNoExceptionHandling();
+            TutorialDeittel.DivideByZeroExceptionHandling();
+>>>>>>> 3dd98512332ce1f5cdffc1d343559328c09abbf7
         }
     }
 }
